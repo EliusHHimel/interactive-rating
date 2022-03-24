@@ -1,10 +1,3 @@
-const t = `You selected <!-- Add rating here --> out of 5
-
-Thank you!
-
-We appreciate you taking the time to give a rating. If you ever need more support, 
-don’t hesitate to get in touch!`
-
 const ratingContainer = document.getElementById('rating');
 const thanksModal = document.getElementById('thanks-modal');
 const submitBtn = document.getElementById('submit-btn');
@@ -15,18 +8,17 @@ ratingContainer.addEventListener('click', (e) =>{
 
 submitBtn.addEventListener('click', ()=>{
 thanksModal.style.display = 'block';
-thanksModal.innerHTML = `<p>
+thanksModal.innerHTML = `
+<center>
+<img src="images/illustration-thank-you.svg" alt="">
+<p class="selected-rating">
 You selected ${rating} out of 5
-<br>
-Thank you!
-<br>
+</p>
+<h2>Thank you!</h2>
+<p>
 We appreciate you taking the time to give a rating. If you ever need more support, 
 don’t hesitate to get in touch!
 </p>
-<button class='ok-btn' id='ok-btn'>OK</button>
+</center>
 `
-const okBtn = document.getElementById('ok-btn');
-okBtn.addEventListener('click', ()=>{
-    thanksModal.style.display = 'none'
-})
 })

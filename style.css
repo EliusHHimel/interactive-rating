@@ -65,20 +65,19 @@ body{
 .thanks-modal{
     position: absolute;
     display: none;
-    height: 180px;
-    width: 250px;
+    margin-top: 60px;
+    height: 300px;
+    width: 280px;
     padding: 25px;
-    background: #0073a0;
+    background: #212832;
     border-radius: 10px;
 }
 
-.ok-btn{
-    padding: 8px 20px;
-    background: #00e498;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.selected-rating{
+    background-color: #262f38;
+    color: #fc7613;
+    padding: 5px;
+    border-radius: 20px;
 }
 
 .attribution{
