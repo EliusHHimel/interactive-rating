@@ -48,7 +48,7 @@ body{
     color: whitesmoke;
 }
 
-.submit-btn{
+.submit-btn, .back-btn{
     display: block;
     width: 100%;
     padding: 10px;
@@ -58,7 +58,7 @@ body{
     color: whitesmoke;
     cursor: pointer;
 }
-.submit-btn:hover{
+.submit-btn:hover, .back-btn:hover{
     color: #fc7613;
     background-color: whitesmoke;
 }

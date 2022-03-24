@@ -12,13 +12,17 @@ thanksModal.innerHTML = `
 <center>
 <img src="images/illustration-thank-you.svg" alt="">
 <p class="selected-rating">
-You selected ${rating} out of 5
+You selected ${rating ?  rating : 'nothing'} out of 5
 </p>
-<h2>Thank you!</h2>
+<h2>${rating ? 'Thank you!' : ''}</h2>
 <p>
-We appreciate you taking the time to give a rating. If you ever need more support, 
-don’t hesitate to get in touch!
+${rating ? "We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!" : 'Please go back and select a rating.'}
 </p>
+${rating ? '' : "<button class='back-btn' id='back-btn'>Back</button>"}
 </center>
 `
+const backBtn = document.getElementById('back-btn');
+backBtn.addEventListener('click', ()=>{
+    thanksModal.style.display = 'none'
+})
 })
