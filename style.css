@@ -8,6 +8,7 @@ body{
 }
 
 .container {
+    margin-top: 100px;
     height: 300px;
     width: 280px;
     padding: 25px;
