@@ -10,7 +10,7 @@ body{
 .container {
     margin-top: 100px;
     height: 300px;
-    width: 280px;
+    width: 320px;
     padding: 25px;
     background: #212832;
     border-radius: 10px;
@@ -67,7 +67,7 @@ body{
     display: none;
     margin-top: 60px;
     height: 300px;
-    width: 280px;
+    width: 320px;
     padding: 25px;
     background: #212832;
     border-radius: 10px;
